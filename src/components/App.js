@@ -5,7 +5,7 @@ import ButtonCont from './buttonCont';
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <h1> Hello and welcome to my React calculator </h1>
       <Display />
       <ButtonCont />
