@@ -9,14 +9,20 @@ export default function ButtonCont() {
   const grp5 = ['0', '.', '='];
 
   const grps = [grp1, grp2, grp3, grp4, grp5];
+  const opsKeys = ['÷', 'X', '-', '+', '='];
 
   return (
     <div className="btnPanel">
       {grps.map(grp => (
         <div className="grp" key={grp}>
-          {grp.map(char => (
-            <Button key={char} btnName={`${char}`} />
-          ))}
+          {grp.map(char => {
+            if (opsKeys.includes(char)) {
+              return <Button key={char} btnName={`${char}`} />;
+            } if (char === '0') {
+              return <Button key={char} btnName={`${char}`} wide color />;
+            }
+            return <Button key={char} btnName={`${char}`} color />;
+          })}
         </div>
       ))}
     </div>
