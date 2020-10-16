@@ -14,9 +14,12 @@ export default function ButtonCont() {
     <div className="btnPanel">
       {grps.map(grp => (
         <div className="grp" key={grp}>
-          {grp.map(char => (
-            <Button key={char} btnName={`${char}`} />
-          ))}
+          {grp.map(char => {
+            if (char === '0') {
+              return <Button key={char} btnName={`${char}`} color wide />;
+            }
+            return <Button key={char} btnName={`${char}`} color />;
+          })}
         </div>
       ))}
     </div>

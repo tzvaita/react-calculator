@@ -46,12 +46,12 @@
           flex-direction: column;
 }
 
-.btn-group {
+.grp {
   height: 100px;
   width: 100%;
 }
 
-.btn-group .button {
+.grp .btn {
   width: 25%;
   height: 100%;
   background-color: #fd9032;
