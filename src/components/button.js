@@ -6,7 +6,7 @@ const Button = ({ btnName, color, wide }) => (
     className="btn"
     type="button"
     style={{
-      backgroundColor: color ? 'dfdfdf' : null,
+      backgroundColor: color ? '#dfdfdf' : null,
       width: wide ? '50%' : null,
     }}
   >
