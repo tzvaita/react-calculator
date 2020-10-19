@@ -1,7 +1,7 @@
 import Big from 'big';
 
 const operate = (numberOne, numberTwo, operation) => {
-  let x = new Big(numberOne);
+  const x = new Big(numberOne);
   switch (operation) {
     case '-':
       return x.minus(numberTwo);
