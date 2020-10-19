@@ -11,7 +11,7 @@ const operate = (numberOne, numberTwo, operation) => {
     case '*':
       return x.times(y);
     case '%':
-      return x.mod(y);
+      return x.div(100);
     default:
       return x.times(y);
   }
