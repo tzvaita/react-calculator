@@ -1,4 +1,3 @@
-import Big from 'big';
 import operate from './operate';
 
 const calculate = ({ total, next, operation }, btnName) => {
