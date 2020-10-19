@@ -1,3 +1,6 @@
+import Big from 'big';
+import operate from './operate';
+
 const calculate = ({ total, next, operation }, btnName) => {
   const calcObj = {
     total,
@@ -23,7 +26,8 @@ const calculate = ({ total, next, operation }, btnName) => {
       calcObj.operation = btnName;
       break;
     case '=':
-      return total;
+      calcObj.total = operate(calcObj.total, calcObj.next, btnName);
+      return calcObj.total;
 
     default:
       return calcObj;
