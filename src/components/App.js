@@ -3,7 +3,6 @@ import '../App.css';
 import Display from './display';
 import ButtonCont from './buttonCont';
 import calculate from '../logic/calculate';
-// import { ReactComponent } from '*.svg';
 
 class App extends React.Component {
   constructor(props) {
@@ -19,7 +18,6 @@ class App extends React.Component {
   handleClick(btnName) {
     const { total, next, operation } = this.state;
     const result = calculate({ total, next, operation }, btnName);
-    console.log(result)
     this.setState({
       total: result.total,
       next: result.next,

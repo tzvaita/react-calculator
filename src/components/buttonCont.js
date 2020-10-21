@@ -4,13 +4,13 @@ import Button from './button';
 
 export default function ButtonCont({ clickHandler }) {
   const grp1 = ['AC', '+/-', '%', '÷'];
-  const grp2 = ['7', '8', '9', 'X'];
+  const grp2 = ['7', '8', '9', 'x'];
   const grp3 = ['4', '5', '6', '-'];
   const grp4 = ['1', '2', '3', '+'];
   const grp5 = ['0', '.', '='];
 
   const grps = [grp1, grp2, grp3, grp4, grp5];
-  const opsKeys = ['÷', 'X', '-', '+', '='];
+  const opsKeys = ['÷', 'x', '-', '+', '='];
 
   const handleClick = btnName => clickHandler(btnName);
 
