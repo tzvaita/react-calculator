@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ btnName, color, wide, clickHandler } ) => {
+const Button = ({
+  btnName, color, wide, clickHandler,
+}) => {
   const handleClick = btName => clickHandler(btName);
 
   return (
