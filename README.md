@@ -1,4 +1,5 @@
 # react calculator
+![Home page](calc.png)
 Create a calculator app using React.
 
 ## Table of Contents
