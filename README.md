@@ -1,4 +1,5 @@
 # react calculator
+![Home page](calc.png)
 Create a calculator app using React.
 
 ## Table of Contents
@@ -31,9 +32,6 @@ https://tennyzvaita-calculator.herokuapp.com/)
 
 To get a local copy up and running follow these simple example steps.
 
-<!-- ### Prerequisites -->
-
-<!-- ### Setup -->
 
 ### Installation
 

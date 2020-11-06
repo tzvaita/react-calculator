@@ -1,20 +1,31 @@
-import Big from 'big';
+import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const x = new Big(numberOne);
-  const y = new Big(numberTwo);
+  const num1 = Big(numberOne);
+  const num2 = Big(numberTwo);
+
+  let result;
+
   switch (operation) {
-    case '-':
-      return x.minus(y);
     case '+':
-      return x.plus(y);
-    case '*':
-      return x.times(y);
+      result = num1.plus(num2);
+      break;
+    case '-':
+      result = num1.minus(num2);
+      break;
+    case 'x':
+      result = num1.times(num2);
+      break;
+    case '÷':
+      result = (num2.eq(0) ? 'Not divisible by Zero' : num1.div(num2));
+      break;
     case '%':
-      return x.div(100);
+      result = num1.div(100);
+      break;
     default:
-      return x.times(y);
   }
+
+  return result.toString();
 };
 
 export default operate;
